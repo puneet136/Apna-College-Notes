@@ -1,0 +1,262 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Linkedlist_Introduction",
+      "request": "launch",
+      "mainClass": "Linkedlist_Introduction",
+      "projectName": "Apna College Java + DSA_6f9a0bee"
+    },
+    {
+      "type": "java",
+      "name": "Pair_Sum2",
+      "request": "launch",
+      "mainClass": "ArrayList.Pair_Sum2",
+      "projectName": "Apna College Java + DSA_6f9a0bee"
+    },
+    {
+      "type": "java",
+      "name": "Container_Water",
+      "request": "launch",
+      "mainClass": "Container_Water",
+      "projectName": "Apna College Java + DSA_6f9a0bee"
+    },
+    {
+      "type": "java",
+      "name": "Swapping_Arraylist",
+      "request": "launch",
+      "mainClass": "Swapping_Arraylist",
+      "projectName": "Apna College Java + DSA_6f9a0bee"
+    },
+    {
+      "type": "java",
+      "name": "introduction",
+      "request": "launch",
+      "mainClass": "introduction",
+      "projectName": "Apna College Java + DSA_6f9a0bee"
+    },
+    {
+      "type": "java",
+      "name": "Introduction",
+      "request": "launch",
+      "mainClass": "Introduction",
+      "projectName": "Apna College Java + DSA_6f9a0bee"
+    },
+    {
+      "type": "java",
+      "name": "Merge_Sort",
+      "request": "launch",
+      "mainClass": "DivideConquer.Merge_Sort",
+      "projectName": "Apna College Java + DSA_6f9a0bee"
+    },
+    {
+      "type": "java",
+      "name": "Introduction",
+      "request": "launch",
+      "mainClass": "Arraylist.Introduction",
+      "projectName": "Apna College Java + DSA_6f9a0bee"
+    },
+    {
+      "type": "java",
+      "name": "Sudoku_Solver",
+      "request": "launch",
+      "mainClass": "BackTracking.Sudoku_Solver",
+      "projectName": "Apna College Java + DSA_6f9a0bee"
+    },
+    {
+      "type": "java",
+      "name": "Sudoku_Solver",
+      "request": "launch",
+      "mainClass": "Sudoku_Solver",
+      "projectName": "Apna College Java + DSA_6f9a0bee"
+    },
+    {
+      "type": "java",
+      "name": "Grid_Maths",
+      "request": "launch",
+      "mainClass": "Grid_Maths",
+      "projectName": "Apna College Java + DSA_6f9a0bee"
+    },
+    {
+      "type": "java",
+      "name": "Grid_Ways",
+      "request": "launch",
+      "mainClass": "Grid_Ways",
+      "projectName": "Apna College Java + DSA_6f9a0bee"
+    },
+    {
+      "type": "java",
+      "name": "nQueens",
+      "request": "launch",
+      "mainClass": "BackTracking.nQueens",
+      "projectName": "Apna College Java + DSA_6f9a0bee"
+    },
+    {
+      "type": "java",
+      "name": "nQueens",
+      "request": "launch",
+      "mainClass": "nQueens",
+      "projectName": "Apna College Java + DSA_6f9a0bee"
+    },
+    {
+      "type": "java",
+      "name": "Find_Permutation",
+      "request": "launch",
+      "mainClass": "BackTracking.Find_Permutation",
+      "projectName": "Apna College Java + DSA_6f9a0bee"
+    },
+    {
+      "type": "java",
+      "name": "Find_Permutation",
+      "request": "launch",
+      "mainClass": "Find_Permutation",
+      "projectName": "Apna College Java + DSA_6f9a0bee"
+    },
+    {
+      "type": "java",
+      "name": "Find_Subsets",
+      "request": "launch",
+      "mainClass": "BackTracking.Find_Subsets",
+      "projectName": "Apna College Java + DSA_6f9a0bee"
+    },
+    {
+      "type": "java",
+      "name": "Find_Subsets",
+      "request": "launch",
+      "mainClass": "Find_Subsets",
+      "projectName": "Apna College Java + DSA_6f9a0bee"
+    },
+    {
+      "type": "java",
+      "name": "Backtracking_Array",
+      "request": "launch",
+      "mainClass": "Backtracking_Array",
+      "projectName": "Apna College Java + DSA_6f9a0bee"
+    },
+    {
+      "type": "java",
+      "name": "Binary_Search",
+      "request": "launch",
+      "mainClass": "array.Binary_Search",
+      "projectName": "Apna College Java + DSA_6f9a0bee"
+    },
+    {
+      "type": "java",
+      "name": "Rotated_search_array",
+      "request": "launch",
+      "mainClass": "Rotated_search_array",
+      "projectName": "Apna College Java + DSA_6f9a0bee"
+    },
+    {
+      "type": "java",
+      "name": "Merge_Sort",
+      "request": "launch",
+      "mainClass": "Merge_Sort",
+      "projectName": "Apna College Java + DSA_6f9a0bee"
+    },
+    {
+      "type": "java",
+      "name": "Quick_Sort",
+      "request": "launch",
+      "mainClass": "Quick_Sort",
+      "projectName": "Apna College Java + DSA_6f9a0bee"
+    },
+    {
+      "type": "java",
+      "name": "Divide_Conquer",
+      "request": "launch",
+      "mainClass": "Divide_Conquer",
+      "projectName": "Apna College Java + DSA_6f9a0bee"
+    },
+    {
+      "type": "java",
+      "name": "Recursion",
+      "request": "launch",
+      "mainClass": "Recursion",
+      "projectName": "Apna College Java + DSA_6f9a0bee"
+    },
+    {
+      "type": "java",
+      "name": "ElectricalCar",
+      "request": "launch",
+      "mainClass": "ElectricalCar",
+      "projectName": "Apna College Java + DSA_6f9a0bee"
+    },
+    {
+      "type": "java",
+      "name": "BasicSorting",
+      "request": "launch",
+      "mainClass": "array.BasicSorting",
+      "projectName": "Apna College Java + DSA_6f9a0bee"
+    },
+    {
+      "type": "java",
+      "name": "q",
+      "request": "launch",
+      "mainClass": "q",
+      "projectName": "Apna College Java + DSA_6f9a0bee"
+    },
+    {
+      "type": "java",
+      "name": "BitManipulation",
+      "request": "launch",
+      "mainClass": "BitManipulation",
+      "projectName": "Apna College Java + DSA_6f9a0bee"
+    },
+    {
+      "type": "java",
+      "name": "Sub_Array",
+      "request": "launch",
+      "mainClass": "array.Sub_Array",
+      "projectName": "Apna College Java + DSA_6f9a0bee"
+    },
+    {
+      "type": "java",
+      "name": "Butterfly_Pattern",
+      "request": "launch",
+      "mainClass": "AdvancePattern.Butterfly_Pattern",
+      "projectName": "Apna College Java + DSA_6f9a0bee"
+    },
+    {
+      "type": "java",
+      "name": "Strings",
+      "request": "launch",
+      "mainClass": "Strings",
+      "projectName": "Apna College Java + DSA_6f9a0bee"
+    },
+    {
+      "type": "java",
+      "name": "Linear_Search",
+      "request": "launch",
+      "mainClass": "array.Linear_Search",
+      "projectName": "Apna College Java + DSA_6f9a0bee"
+    },
+    {
+      "type": "java",
+      "name": "demo",
+      "request": "launch",
+      "mainClass": "demo",
+      "projectName": "Apna College Java + DSA_6f9a0bee"
+    },
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "cppdbg",
+      "request": "launch",
+      "args": [],
+      "stopAtEntry": false,
+      "externalConsole": true,
+      "cwd": "c:/Apna College Java + DSA",
+      "program": "c:/Apna College Java + DSA/build/Debug/outDebug",
+      "MIMode": "gdb",
+      "miDebuggerPath": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ]
+    }
+  ]
+}
