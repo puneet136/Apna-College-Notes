@@ -190,6 +190,7 @@ public class Linkedlist_Introduction {
         Head = Prev;
     }
 
+    @SuppressWarnings("UnnecessaryReturnStatement")
     public void DeleteNthFromEnd(int n){
         //Calculate Size :- If in the other code the size is not calculated so that this is the code for calculate the size
         // int sz = 0;
@@ -378,7 +379,6 @@ public class Linkedlist_Introduction {
     
     // @SuppressWarnings("static-access")
     public static void main (String [] args){
-        @SuppressWarnings("unused")
         Linkedlist_Introduction ll = new Linkedlist_Introduction();
         ll.AddFirst(1);
         ll.AddFirst(2);
@@ -387,7 +387,7 @@ public class Linkedlist_Introduction {
         ll.AddFirst(5);
         ll.print();
 
-        ll.Head = ll.mergesort(ll.Head);
+        Linkedlist_Introduction.Head = ll.mergesort(Linkedlist_Introduction.Head);
         ll.print();
     }
 }
