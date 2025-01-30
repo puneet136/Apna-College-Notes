@@ -4,6 +4,7 @@
 ### **2️⃣ Motivational README (Engaging & Fun)**
 ```md
 # 🚀 Apna College DSA Journey
+## 📂 Folder Structure
 
 This repo is my personal **DSA learning journal** 📚, where I document my **daily progress, concepts, and problem solutions** from Apna College.
 
@@ -29,3 +30,4 @@ This repo is my personal **DSA learning journal** 📚, where I document my **da
 - 🏆 **Handpicked Problems with Solutions**  
 
 📌 **Let's learn & grow together!** 💙  
+
