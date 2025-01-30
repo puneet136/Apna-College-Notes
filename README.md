@@ -31,3 +31,10 @@ This repo is my personal **DSA learning journal** 📚, where I document my **da
 
 📌 **Let's learn & grow together!** 💙  
 
+
+---
+
+## 🚀 How to Use This Repo?
+1️⃣ **Fork & Clone**  
+```bash
+git clone https://github.com/yourusername/apna-college-dsa.git
