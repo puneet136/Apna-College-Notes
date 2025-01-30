@@ -10,7 +10,8 @@ public class Linkedlist_Framework {
         ll.addLast(1);
         ll.addLast(2);
         ll.addFirst(0);
-        
+        ll.addLast(3);
+
         System.out.println(ll);
     }
 }
