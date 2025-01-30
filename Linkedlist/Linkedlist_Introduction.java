@@ -377,17 +377,59 @@ public class Linkedlist_Introduction {
         return merge(newLeft , newRight);
     }
     
+    public void ZigZag(){
+        //Find Mid
+        Node slow = Head;
+        Node fast = Head.next;
+
+        while(fast != null && fast.next != null){
+            slow = slow.next;
+            fast = fast.next.next;
+        }
+        Node mid = slow;
+
+        //Making 1st list
+        Node curr = mid.next;
+        mid.next = null;
+
+        //Reverse 2nd Half
+        Node prev = null;
+        Node next;
+
+        while(curr != null){
+            next = curr.next;
+            curr.next = prev;
+            prev = curr;
+            curr = next;
+        }
+
+        Node left = Head;
+        Node right = prev;
+        Node nextL , nextR;
+
+        //Alternate Merging - Zig zag Merging
+        while(left != null && right != null){
+            nextL = left.next;
+            left.next = right;
+            nextR = right.next;
+            right.next = nextL;
+
+            //Update left and Right
+            left = nextL;
+            right = nextR;
+        }
+    }
     // @SuppressWarnings("static-access")
     public static void main (String [] args){
         Linkedlist_Introduction ll = new Linkedlist_Introduction();
-        ll.AddFirst(1);
-        ll.AddFirst(2);
-        ll.AddFirst(3);
-        ll.AddFirst(4);
-        ll.AddFirst(5);
+        ll.AddLast(1);
+        ll.AddLast(2);
+        ll.AddLast(3);
+        ll.AddLast(4);
+        ll.AddLast(5);
         ll.print();
 
-        Linkedlist_Introduction.Head = ll.mergesort(Linkedlist_Introduction.Head);
+        ll.ZigZag();
         ll.print();
     }
 }
