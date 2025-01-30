@@ -11,6 +11,7 @@ class ArrayList<T> {
         throw new UnsupportedOperationException("Unimplemented method 'get'");
     }
 
+    @SuppressWarnings("unused")
     void set(int idx1, int get) {
         throw new UnsupportedOperationException("Not supported yet.");
     }
