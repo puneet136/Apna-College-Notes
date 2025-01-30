@@ -338,6 +338,6 @@ public class Linkedlist_Introduction {
 
         System.out.println(isCycle());
         removeCycle();
-        System.out.println(isCycle());  
+        System.out.println(isCycle());
     }
 }
