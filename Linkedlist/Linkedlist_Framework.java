@@ -13,5 +13,10 @@ public class Linkedlist_Framework {
         ll.addLast(3);
 
         System.out.println(ll);
+
+        ll.removeLast();
+        ll.removeFirst();
+
+        System.out.println(ll);
     }
 }
