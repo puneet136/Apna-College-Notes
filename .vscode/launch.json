@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Linkedlist_Framework",
+      "request": "launch",
+      "mainClass": "Linkedlist.Linkedlist_Framework",
+      "projectName": "Apna College Java + DSA_6f9a0bee"
+    },
+    {
+      "type": "java",
       "name": "Linkedlist_Introduction",
       "request": "launch",
       "mainClass": "Linkedlist.Linkedlist_Introduction",
