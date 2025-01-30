@@ -317,27 +317,77 @@ public class Linkedlist_Introduction {
         // Remove Cycle -> Set the last node's next to null
         prev.next = null;
     }
+
+    private Node getMid(Node Head){
+        Node slow = Head;
+        Node Fast = Head.next;
+
+        while(Fast != null && Fast.next != null){
+            slow = slow.next;
+            Fast = Fast.next.next;
+        }
+        return slow;
+    }
+
+    private Node merge(Node head1 , Node head2){
+        Node mergedLL = new Node(-1);
+        Node temp = mergedLL;
+
+        while(head1 != null && head2 != null){
+            if(head1.data <= head2.data){
+                temp.next = head1;
+                head1 = head1.next;
+                temp = temp.next;
+            }
+            else{
+                temp.next = head2;
+                head2 = head2.next;
+                temp = temp.next;
+            }
+        }
+        while(head1 != null){
+            temp.next = head1;
+            head1 = head1.next;
+            temp = temp.next;
+        }
+        while(head2 != null){
+            temp.next = head2;
+            head2 = head2.next;
+            temp = temp.next;
+        }
+        return mergedLL.next;
+    }
+    public Node mergesort(Node Head){
+        //Base Case
+
+        if(Head == null || Head.next == null){
+            return Head;
+        }
+        //Find Middle
+        Node mid = getMid(Head);
+
+        //Left & Right --> Merge Sort
+        Node RightHead = mid.next;
+        mid.next = null;
+        Node newLeft = mergesort(Head);
+        Node newRight = mergesort(RightHead);
+
+        //Merge those single list
+        return merge(newLeft , newRight);
+    }
     
     // @SuppressWarnings("static-access")
     public static void main (String [] args){
         @SuppressWarnings("unused")
         Linkedlist_Introduction ll = new Linkedlist_Introduction();
-        // ll.AddFirst(5);
-        // ll.AddFirst(4);
-        // ll.AddFirst(3);
-        // ll.AddFirst(2);
-        // ll.AddFirst(1);
-        // ll.print();
-        // System.out.println(ll.CheckPalindrome());
-        Head = new  Node(1);
-        Node temp = new Node(2);
-        Head.next = temp;
-        Head.next.next = new Node(3);
-        Head.next.next.next = temp;
-        //1->2->3->1        :- This is our Linkedlist
+        ll.AddFirst(1);
+        ll.AddFirst(2);
+        ll.AddFirst(3);
+        ll.AddFirst(4);
+        ll.AddFirst(5);
+        ll.print();
 
-        System.out.println(isCycle());
-        removeCycle();
-        System.out.println(isCycle());
+        ll.Head = ll.mergesort(ll.Head);
+        ll.print();
     }
 }
