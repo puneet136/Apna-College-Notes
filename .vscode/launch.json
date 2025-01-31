@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "DLL",
+      "request": "launch",
+      "mainClass": "Linkedlist.DLL",
+      "projectName": "Apna College Java + DSA_6f9a0bee"
+    },
+    {
+      "type": "java",
       "name": "Linkedlist_Framework",
       "request": "launch",
       "mainClass": "Linkedlist.Linkedlist_Framework",
