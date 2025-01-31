@@ -37,6 +37,28 @@ public class DLL {
         }
         System.out.println("null");
     }
+
+    //Remove FIrst
+
+    public int RemoveFirst(){
+        if(Head == null){
+            System.out.println("DLL is Empty");
+            return Integer.MIN_VALUE;
+        }
+
+        if(size==1)
+        {
+            int val = Head.data;
+            Head = Tail = null;
+            size--;
+            return val;
+        }
+        int val = Head.data;
+        Head = Head.next;
+        Head.prev = null;
+        size--;
+        return val;
+    }
     public static Node Head;
     public static Node Tail;
     public static int size;
@@ -48,6 +70,9 @@ public class DLL {
 
         dll.print();
         System.out.println(size);
-        
+
+        dll.RemoveFirst();
+        dll.print();
+        System.out.println(size);
     }
 }
