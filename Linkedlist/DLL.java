@@ -28,6 +28,24 @@ public class DLL {
         Head = newNode;
     }
 
+    public void AddLast(int data){
+        Node newNode = new Node(data);
+        size++;
+        if(Head == null)
+        {
+            Head = Tail = newNode;
+            return;
+        }
+        
+        Node temp = Head;
+        while(temp.next != null){
+            temp = temp.next;
+        }
+        temp.next = newNode;
+        newNode.prev = temp;
+        newNode.next = null;
+    }
+
     //Print
     public void print(){
         Node temp = Head;
@@ -67,12 +85,13 @@ public class DLL {
         dll.addFirst(3);
         dll.addFirst(2);
         dll.addFirst(1);
+        dll.AddLast(4);
 
         dll.print();
         System.out.println(size);
 
-        dll.RemoveFirst();
-        dll.print();
-        System.out.println(size);
+        // dll.RemoveFirst();
+        // dll.print();
+        // System.out.println(size);
     }
 }
