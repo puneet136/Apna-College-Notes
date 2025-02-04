@@ -100,6 +100,29 @@ public class DLL {
         }
         size--;
     }
+
+    public void ReverseDLL(){
+        Node curr = Head;
+        Node Prev = null;
+        Node next;
+        if(Head == null){
+            System.out.println("List Is Empty");
+        }
+        if(Head == Tail){
+            System.out.println("There Is Only One Node");
+        }
+        else{
+                while(curr != null){
+                next = curr.next;
+                curr.next = Prev;
+                curr.prev = next;
+
+                Prev = curr;
+                curr = next;
+            }
+            Head = Prev;
+        }
+    }
     public static Node Head;
     public static Node Tail;
     public static int size;
@@ -111,10 +134,13 @@ public class DLL {
         dll.AddLast(4);
 
         dll.print();
-        System.out.println(size);
+        // System.out.println(size);
 
-        dll.RemoveLast();
+        // dll.RemoveLast();
+        // dll.print();
+        // System.out.println(size);
+
+        dll.ReverseDLL();
         dll.print();
-        System.out.println(size);
     }
 }
