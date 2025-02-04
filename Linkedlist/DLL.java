@@ -88,7 +88,7 @@ public class DLL {
             Head = Tail = null;
         }
         else{
-            Node temp = new Node(size);
+            Node temp = new Node(3);
             temp = Head;
             while(temp.next.next != null)
             {
