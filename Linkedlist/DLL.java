@@ -77,6 +77,29 @@ public class DLL {
         size--;
         return val;
     }
+
+    public void RemoveLast(){
+        if(Head == null){
+            System.out.println("Doubly LinkedList Is empty");
+        }
+
+        //If There's Only one Node
+        if(Head == Tail){
+            Head = Tail = null;
+        }
+        else{
+            Node temp = new Node(size);
+            temp = Head;
+            while(temp.next.next != null)
+            {
+                temp = temp.next;
+            }
+            temp.next = null;
+            Tail.prev = temp;
+            Tail = temp;
+        }
+        size--;
+    }
     public static Node Head;
     public static Node Tail;
     public static int size;
@@ -90,8 +113,8 @@ public class DLL {
         dll.print();
         System.out.println(size);
 
-        // dll.RemoveFirst();
-        // dll.print();
-        // System.out.println(size);
+        dll.RemoveLast();
+        dll.print();
+        System.out.println(size);
     }
 }
