@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "StackB",
+      "request": "launch",
+      "mainClass": "StackB",
+      "projectName": "Apna College Java + DSA_6f9a0bee"
+    },
+    {
+      "type": "java",
       "name": "DLL",
       "request": "launch",
       "mainClass": "Linkedlist.DLL",
