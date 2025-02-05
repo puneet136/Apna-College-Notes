@@ -1,5 +1,5 @@
+package stack;
 import java.util.ArrayList;
-
 public class StackB {
 
     static class Stack {
@@ -43,6 +43,7 @@ public class StackB {
         }
     }
 
+    @SuppressWarnings("static-access")
     public static void main(String[] args) {
         Stack s = new Stack();
         s.push(1);
