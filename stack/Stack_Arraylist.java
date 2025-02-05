@@ -1,6 +1,6 @@
 package stack;
 import java.util.ArrayList;
-public class StackB {
+public class Stack_Arraylist {
 
     static class Stack {
 
