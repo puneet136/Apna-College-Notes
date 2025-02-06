@@ -13,6 +13,22 @@ public class Stack_JCF {
         pushAtBottom(s, data);
         s.push(top);
     }
+
+    public static String ReverseString(String str){
+        Stack<Character> st = new Stack<>();
+        int idx = 0;
+        while(idx < str.length()){
+            st.push(str.charAt(idx));
+            idx++;
+        }
+
+        StringBuilder result = new StringBuilder("");
+        while(!st.isEmpty()){
+            char curr = st.pop();
+            result.append(curr);
+        }
+        return result.toString();
+    }
     public static void main(String[] args) {
         Stack<Integer> s = new Stack<>();
 
@@ -21,9 +37,14 @@ public class Stack_JCF {
     s.push(3);
 
     pushAtBottom(s , 4);
+    
     while(!s.isEmpty()){
         System.out.println(s.peek());
         s.pop();
     }
+
+    String str = "puneet";
+    String result = ReverseString(str);
+    System.out.println(result);
     }
 }
