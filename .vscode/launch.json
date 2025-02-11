@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Stock_Span",
+      "request": "launch",
+      "mainClass": "stack.Stock_Span",
+      "projectName": "Apna College Java + DSA_6f9a0bee"
+    },
+    {
+      "type": "java",
       "name": "Valid_Parantheses",
       "request": "launch",
       "mainClass": "Valid_Parantheses",
