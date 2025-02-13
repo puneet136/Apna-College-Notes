@@ -28,7 +28,8 @@ public class Stock_Span {
 
         int span[] = new int [stock.length];
         stockSpan(stock, span);
-        for(int i=0;i<span.length ; i++){
+        for(int i=0;i<span.length ; i++)
+        {
             System.out.print(span[i] + " ");
         }
     }
