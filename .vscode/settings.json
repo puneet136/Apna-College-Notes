@@ -16,9 +16,12 @@
     "Nqueens",
     "nums",
     "optimizebubblesort",
+    "paranthesis",
+    "printpairs",
     "Puneet",
     "selectionsort",
-    "Steping"
+    "Steping",
+    "subarray"
   ],
   "C_Cpp_Runner.cCompilerPath": "gcc",
   "C_Cpp_Runner.cppCompilerPath": "g++",

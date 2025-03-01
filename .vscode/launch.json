@@ -3,6 +3,55 @@
   "configurations": [
     {
       "type": "java",
+      "name": "queue_intro",
+      "request": "launch",
+      "mainClass": "queue_intro",
+      "projectName": "Apna College Java + DSA_6f9a0bee"
+    },
+    {
+      "type": "java",
+      "name": "Spiral_Matrix",
+      "request": "launch",
+      "mainClass": "array.Spiral_Matrix",
+      "projectName": "Apna College Java + DSA_6f9a0bee"
+    },
+    {
+      "type": "java",
+      "name": "Diagonal_Sum",
+      "request": "launch",
+      "mainClass": "array.Diagonal_Sum",
+      "projectName": "Apna College Java + DSA_6f9a0bee"
+    },
+    {
+      "type": "java",
+      "name": "MaxSubArraySum1",
+      "request": "launch",
+      "mainClass": "array.MaxSubArraySum1",
+      "projectName": "Apna College Java + DSA_6f9a0bee"
+    },
+    {
+      "type": "java",
+      "name": "MaxSubArraySum",
+      "request": "launch",
+      "mainClass": "array.MaxSubArraySum",
+      "projectName": "Apna College Java + DSA_6f9a0bee"
+    },
+    {
+      "type": "java",
+      "name": "Reverse_Array",
+      "request": "launch",
+      "mainClass": "array.Reverse_Array",
+      "projectName": "Apna College Java + DSA_6f9a0bee"
+    },
+    {
+      "type": "java",
+      "name": "Next_Greater_Element",
+      "request": "launch",
+      "mainClass": "stack.Next_Greater_Element",
+      "projectName": "Apna College Java + DSA_6f9a0bee"
+    },
+    {
+      "type": "java",
       "name": "Duplicate_paranthesis",
       "request": "launch",
       "mainClass": "stack.Duplicate_paranthesis",

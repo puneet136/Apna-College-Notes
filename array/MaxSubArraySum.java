@@ -15,6 +15,7 @@ public class MaxSubArraySum {
                 for(int k = start ; k<=end ; k++)
                 {
                     //Sub Array Sum
+                    System.out.print(numbers[k] + " ");
                     CurrSum += numbers[k];
                 }
 

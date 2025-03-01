@@ -34,7 +34,7 @@ public class MaxSubArraySum1 {
             System.out.println("Maximum sum is :" +maxsum);
     }
 
-                            //KADANE'S Algoritham
+                            //KADANE'S Algorithm
 
     public static void kadanes(int numbers1[])
     {
