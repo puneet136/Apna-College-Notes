@@ -46,6 +46,7 @@ public class queue_intro {
             return arr[0];
         }
     }
+    @SuppressWarnings("static-access")
     public static void main(String[] args) {
         Queue q = new Queue(5);
         q.add(1);
