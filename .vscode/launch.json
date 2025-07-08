@@ -3,6 +3,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Trapping_Water",
+      "request": "launch",
+      "mainClass": "array.Trapping_Water",
+      "projectName": "Apna College Java + DSA_71735f0d"
+    },
+    {
+      "type": "java",
+      "name": "Spiral_Matrix",
+      "request": "launch",
+      "mainClass": "array.Spiral_Matrix",
+      "projectName": "Apna College Java + DSA_71735f0d"
+    },
+    {
+      "type": "java",
       "name": "queue_intro",
       "request": "launch",
       "mainClass": "queue_intro",

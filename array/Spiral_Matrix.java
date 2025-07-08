@@ -9,18 +9,21 @@ public class Spiral_Matrix {
         while(StartRow<= EndRow && StartCol <= EndCol) {
 
         //Top Boundary
+        //For Top Boundary Starting Row is Fixed..!!
         for(int j=StartCol ;j<=EndCol ;j++)
         {
             System.out.print(matrix[StartRow][j] + " ");
         }
 
         //Right Boundary
+        //for Right Boundary End Column is Fixed..!!
         for(int i = StartRow+1;i<=EndRow;i++)
         {
             System.out.print(matrix[i][EndCol] +" ");
         }
 
         //Bottom Boundary
+        //For Bottom Boundary Ending Roe is fixed
         for(int j=EndCol-1;j>=StartCol;j--)
         {
             if(StartCol==EndCol)
