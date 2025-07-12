@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Multi_Arraylist",
+      "request": "launch",
+      "mainClass": "ArrayList.Multi_Arraylist",
+      "projectName": "Apna College Java + DSA_71735f0d"
+    },
+    {
+      "type": "java",
       "name": "Trapping_Water",
       "request": "launch",
       "mainClass": "array.Trapping_Water",

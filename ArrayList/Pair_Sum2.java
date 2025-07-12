@@ -21,9 +21,11 @@ public class Pair_Sum2 {
             }
 
             else if(list.get(lp) + list.get(rp) < target){
+                //Move Forward Circularly
                 lp = (lp+1)%list.size();
             }
             else{
+                //Move Backward Circularly
                 rp = (list.size()+rp-1)%list.size();
             }
         }
@@ -31,13 +33,13 @@ public class Pair_Sum2 {
     }
     public static void main(String[] args) {
         ArrayList<Integer> list = new ArrayList<>();
-        list.add(11);
         list.add(10);
+        list.add(11);
         list.add(6);
         list.add(7);
         list.add(8);
         list.add(9);
-        //Given List is :- 11,10,6,7,8,9 :- Which is Sorted And Rotated
+        //Given List is :- 10,11,6,7,8,9 :- Which is Sorted And Rotated
         int target = 160;
         System.out.print(PairSum2(list,target));
     }

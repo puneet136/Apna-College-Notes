@@ -17,11 +17,13 @@ public class Rotated_search_array {
             if(arr[si]<=target && target<= arr[mid])
             {
                 return search(arr,target,si,mid-1);
+                //ei = mid-1;
             }
             //Case b: Right of Line 1
             else
             {
                 return search(arr,target,mid+1,ei);
+                // si = mid+1;
             }
         }
 
@@ -31,12 +33,14 @@ public class Rotated_search_array {
                 if(arr[mid]<= target && target <= arr[ei])
                 {
                     return search(arr,target,mid+1,ei);
+                    //si = mid+1;
                 }
 
                 //Case D: Left Part of line 2
                 else
                 {
                     return search(arr,target,si,mid-1);
+                    //ei = mid-1;
                 }
         }
     }

@@ -4,10 +4,13 @@ public class Multi_Arraylist {
     public static void main(String[] args) {
         ArrayList<ArrayList<Integer> > MainList = new ArrayList<>();
         ArrayList<Integer> list1 = new ArrayList<>();
-        list1.add(1); list1.add(2);
+        list1.add(1);
+        list1.add(2);
         MainList.add(list1);
+
         ArrayList<Integer> list2 = new ArrayList<>();
-        list2.add(3);list2.add(4);
+        list2.add(3);
+        list2.add(4);
         MainList.add(list2);
 
         for(int i = 0 ; i<MainList.size() ; i++){

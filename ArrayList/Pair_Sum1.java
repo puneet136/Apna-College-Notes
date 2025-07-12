@@ -17,6 +17,8 @@ public class Pair_Sum1 {
         return false;
     }
 
+
+    //But i think this approach works only the given list is sorted!!
     public static boolean PairSum(ArrayList<Integer> list , int target){
         //This is Called Two Pointer Approach
         //Time complexity :- O(n)
