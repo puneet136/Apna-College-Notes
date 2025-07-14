@@ -14,6 +14,7 @@ public class HashMapCode {
         }
 
         private int n;      //n - Nodes
+        @SuppressWarnings("FieldMayBeFinal")
         private int N;      //N - Bucket Size
         private LinkedList<Node> buckets[];    //N = buckets.length and buckets[] is nothing but it is a array
 
@@ -96,12 +97,7 @@ public class HashMapCode {
             int bi = hashFunction(key);
             int di = searchInLL(key, bi);
 
-            if(di == -1){
-                return false;
-            }
-            else{
-                return true;
-            }
+            return di != -1;
         }
 
         public V remove(K key){
@@ -125,9 +121,7 @@ public class HashMapCode {
         public ArrayList<K> KeySet(){
             ArrayList<K> keys =  new ArrayList<>();
 
-            for(int bi= 0 ;bi<buckets.length ; bi++){
-                LinkedList<Node> ll = buckets[bi];
-
+            for (LinkedList<Node> ll : buckets) {
                 for(int di = 0;di<ll.size(); di++){
                     Node node = ll.get(di);
                     keys.add(node.key);
