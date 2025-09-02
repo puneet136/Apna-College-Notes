@@ -1,10 +1,11 @@
-public class queue_intro {
-    static class Queue{
-        static int size;
-        static int arr[];
-        static int rear;
+package queue;
 
-        public Queue(int n) {
+public class ArrayImplementation {
+    static class queue{
+        static int[] arr;
+        static int size;
+        static int rear;
+        queue(int n){
             arr = new int[n];
             size = n;
             rear = -1;
@@ -16,11 +17,10 @@ public class queue_intro {
 
         public static void add(int data){
             if(rear == size-1){
-                System.out.println("Queue is full");
+                System.out.println("Queue is Full");
                 return;
             }
-
-            rear=rear+1;
+            rear += 1;
             arr[rear] = data;
         }
 
@@ -29,15 +29,13 @@ public class queue_intro {
                 System.out.println("Queue is Empty");
                 return -1;
             }
-
             int front = arr[0];
-            for(int i=0 ; i<rear ; i++){
+            for(int i=0;i<rear;i++){
                 arr[i] = arr[i+1];
             }
-            rear--;
+            rear -= 1;
             return front;
         }
-
         public static int peek(){
             if(isEmpty()){
                 System.out.println("Queue is Empty");
@@ -47,14 +45,14 @@ public class queue_intro {
         }
     }
     @SuppressWarnings("static-access")
-    public static void main(String[] args) {
-        Queue q = new Queue(5);
+    public static void main(String [] args){
+        queue q = new queue(5);
         q.add(1);
         q.add(2);
         q.add(3);
-
+        q.add(4);
         while(!q.isEmpty()){
-            System.out.println(q.peek());
+            System.err.print(q.peek()+" ");
             q.remove();
         }
     }
