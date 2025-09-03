@@ -27,8 +27,7 @@ public class Recursion{
             return 1;
         }
         int fnm1 = fact(n-1);
-        int fn = n * fnm1;
-        return fn;
+        return n * fnm1;
     }
 
     public static int PrintSum(int n){
@@ -36,8 +35,7 @@ public class Recursion{
             return 1;
         }
         int pnm1= PrintSum(n-1);
-        int pn = n+pnm1;
-        return pn;
+        return n+pnm1;
     }
 
     public static int Fib(int n){
@@ -51,11 +49,10 @@ public class Recursion{
         }
         int fibnm1 = Fib(n-1);
         int fibnm2 = Fib(n-2);
-        int fibn = fibnm1 + fibnm2;
-        return fibn;
+        return fibnm1 + fibnm2;
     }
 
-    public static boolean IsSorted(int arr[] , int i){
+    public static boolean IsSorted(int[] arr, int i){
         if(i==arr.length-1)
         {
             return true;
@@ -67,7 +64,7 @@ public class Recursion{
         return IsSorted(arr, i+1);
     }
 
-    public static int FirstOccurrence(int arr[] , int key , int i){
+    public static int FirstOccurrence(int [] arr, int key , int i){
         if(i==arr.length)
         {
             return -1;
@@ -79,7 +76,7 @@ public class Recursion{
         return FirstOccurrence(arr, key, i+1);
     }
 
-    public static int LastOccurrence (int arr[] , int key , int i)
+    public static int LastOccurrence (int[] arr, int key , int i)
     {
         if(i==arr.length-1)
         {
@@ -98,8 +95,7 @@ public class Recursion{
             return 1;
         }
         int xnm1 = power(x,n-1);
-        int xn = x * xnm1;
-        return xn;
+        return x * xnm1;
     }
 
     public static int OptimizedPower(int a , int n)
@@ -131,9 +127,7 @@ public class Recursion{
         //Horizontal Choices
         int fnm2 = tilingProblem(n-2);
 
-        int TotalWays = fnm1 + fnm2;
-
-        return TotalWays;
+        return fnm1 + fnm2;
     }
 
     public static void BinaryString(int n, int lastplace , String str){
