@@ -3,6 +3,7 @@
     <words>
       <w>fibnm</w>
       <w>logn</w>
+      <w>nlogn</w>
     </words>
   </dictionary>
 </component>
