@@ -54,7 +54,7 @@ public class Strings
         return substr;
     }
 
-    public static void largetstring(String fruits [])
+    public static void largeststring(String fruits [])
     {
             String largest = fruits[0];
 

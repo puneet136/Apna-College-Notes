@@ -4,7 +4,7 @@ public class Searching_Sorted_Matrix {
                     //For Top left Corner Condition     ---> Time complexity of this method is O(n+m)
                     //Where n and m is continuously length of row and column
 
-    public static boolean staircase(int matrix[][] , int key) {
+    public static boolean staircase(int[][] matrix, int key) {
         int row = 0;
         int col =matrix[0].length-1;
 
@@ -27,7 +27,7 @@ public class Searching_Sorted_Matrix {
 
                         //For Bottom Right Corner condition
 
-    public static boolean staircase1(int matrix[][] , int key) {
+    public static boolean staircase1(int[][] matrix, int key) {
         int row=matrix.length-1 , col =0;
 
         while(row>= 0 && col <matrix[0].length) {
@@ -49,12 +49,37 @@ public class Searching_Sorted_Matrix {
         return false;
     }
 
-    public static void main(String args[]) {
-        int matrix [] [] = { {10, 20, 30, 40},
+    //This is a Binary Method approach
+    public static boolean Matrix_Search(int[][] matrix, int key){
+        int m = matrix.length;
+        int n = matrix[0].length;
+
+        int low = 0;
+        int high = m*n-1;
+        while(low <= high){
+            int mid = (low + high) / 2;
+
+            int row = mid/n;
+            int col = mid%n;
+
+            int midELement = matrix[row][col];
+
+            if(midELement == key) return true;
+
+            else if(midELement < key) low = mid +1;
+
+            else high = mid - 1;
+        }
+        return false;
+    }
+
+    static void main(String[] args) {
+        int[][] matrix = { {10, 20, 30, 40},
                             {15, 25, 35, 45},
                             {27, 29, 37, 48},
                             {32, 33, 39, 50} };
         int key =30;
-        staircase1(matrix, key);
+//        staircase1(matrix, key);
+        System.out.println(Matrix_Search(matrix, key));
     }
 }

@@ -31,8 +31,7 @@ public class Implementation {
         Node d = new Node(5);
         a.left = c;
         a.right = d;
-        Node e = new Node(11);
-        d.right = e;
+        d.right = new Node(11);
         display(root);
     }
 }

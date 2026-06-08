@@ -3,6 +3,34 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Main",
+      "request": "launch",
+      "mainClass": "Main",
+      "projectName": "Apna College Java + DSA_71735f0d"
+    },
+    {
+      "type": "java",
+      "name": "Cover_in_Water",
+      "request": "launch",
+      "mainClass": "Cover_in_Water",
+      "projectName": "Apna College Java + DSA_71735f0d"
+    },
+    {
+      "type": "java",
+      "name": "Line_Trip",
+      "request": "launch",
+      "mainClass": "Line_Trip",
+      "projectName": "Apna College Java + DSA_71735f0d"
+    },
+    {
+      "type": "java",
+      "name": "Halloumi_Boxes",
+      "request": "launch",
+      "mainClass": "Halloumi_Boxes",
+      "projectName": "Apna College Java + DSA_71735f0d"
+    },
+    {
+      "type": "java",
       "name": "ArrayImplementation",
       "request": "launch",
       "mainClass": "Queue.ArrayImplementation",

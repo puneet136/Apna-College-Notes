@@ -1,6 +1,6 @@
 package array;
 public class Spiral_Matrix {
-    public static void printspiral (int matrix[] [] ) {
+    public static void printspiral (int [][] matrix ) {
         int StartRow = 0;
         int EndRow = matrix.length-1;
         int StartCol = 0;
@@ -23,7 +23,7 @@ public class Spiral_Matrix {
         }
 
         //Bottom Boundary
-        //For Bottom Boundary Ending Roe is fixed
+        //For Bottom Boundary Ending Row is fixed
         for(int j=EndCol-1;j>=StartCol;j--)
         {
             if(StartCol==EndCol)
